@@ -1,0 +1,30 @@
+{
+    "old_val": {
+        "metrics/precision(B)": 0.8550496163671019,
+        "metrics/recall(B)": 0.8533333333333333,
+        "metrics/mAP50(B)": 0.8190570227106226,
+        "metrics/mAP50-95(B)": 0.6508410144877346,
+        "fitness": 0.6676626153100235
+    },
+    "old_test": {
+        "metrics/precision(B)": 0.9395949178878583,
+        "metrics/recall(B)": 0.9039234770329279,
+        "metrics/mAP50(B)": 0.9449422918461764,
+        "metrics/mAP50-95(B)": 0.7332944371454053,
+        "fitness": 0.7544592226154825
+    },
+    "new_val": {
+        "metrics/precision(B)": 0.8550496163671019,
+        "metrics/recall(B)": 0.8533333333333333,
+        "metrics/mAP50(B)": 0.8190570227106226,
+        "metrics/mAP50-95(B)": 0.6508410144877346,
+        "fitness": 0.6676626153100235
+    },
+    "new_test": {
+        "metrics/precision(B)": 0.9395949178878583,
+        "metrics/recall(B)": 0.9039234770329279,
+        "metrics/mAP50(B)": 0.9449422918461764,
+        "metrics/mAP50-95(B)": 0.7332944371454053,
+        "fitness": 0.7544592226154825
+    }
+}

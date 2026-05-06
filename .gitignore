@@ -1,0 +1,58 @@
+# Python
+.pytest_cache/
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.env
+backend/.venv/
+backend/venv/
+*.egg-info/
+
+# Node/React
+node_modules/
+frontend/node_modules/
+build/
+.pnp
+.pnp.js
+coverage/
+.DS_Store
+
+# YOLO model weights (download separately)
+*.pt
+*.ckpt
+*.safetensors
+runs/
+datasets/
+
+# Private / proprietary video footage
+*.mp4
+*.mkv
+*.avi
+backend/videos/
+demo_recordings/
+
+# Runtime-generated outputs
+backend/snapshots/
+snapshots/
+*.npy
+backend/event_log.csv
+event_log.csv
+
+# Scratch / dev files
+backend/screenshot_*.jpg
+frontend/src\ -backup.zip
+version_log.txt
+README_SETUP_NEW_PC.md
+
+# IDE & OS
+.vscode/
+.idea/
+Thumbs.db
+
+# Credentials and secrets
+*.env
+secrets.py
+config_local.py
+api_keys.py

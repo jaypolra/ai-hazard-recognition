@@ -1,0 +1,22 @@
+# --- server ---
+fastapi==0.116.1
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+websockets==11.0.3
+
+# --- core ML stack (CUDA 11.8 build; change if needed) ---
+torch==2.3.1+cu118
+torchvision==0.18.1+cu118
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+ultralytics==8.0.239
+
+# --- CV / numeric ---
+# pick ONE OpenCV build. If running without a display on the server, use headless.
+opencv-python==4.11.0.86
+# opencv-python-headless==4.11.0.86  # (use this instead of opencv-python on headless)
+# opencv-contrib-python==4.11.0.86   # only if you truly need contrib modules like xfeatures2d
+
+numpy==1.26.4   # avoids ABI breakage with older compiled wheels on Windows
+deep_sort_realtime
+setuptools
