@@ -17,13 +17,15 @@ This system performs real-time hazard detection across a four-camera bay using a
 
 The system classifies each frame into a **three-state traffic light** (SAFE / CAUTION / HAZARD) per zone, with support for physical blocker isolation, vehicle blind spot memory, and manual zone clear confirmation.
 
+This work was submitted to the AISTech 2026 conference.
+
 ![System Architecture](media/architecture.png)
 
 ---
 
 ## Key Features
 
-- **Custom YOLO26m model** — 4-class detector: `person`, `pot_blocking`, `pot_hauler`, `pot_not_blocking`
+- **Custom YOLO26m model** — project ontology covers `gate_open`, `person`, `pot_blocking`, `pot_hauler`, and `pot_not_blocking`; current runtime suppresses `gate_open` when gate footage is unavailable
 - **Zone-based 5-rule priority hazard logic** — evaluates safety state per zone considering equipment activity, personnel presence, and physical blockers
 - **4-camera MJPEG streaming** — wall-clock synchronized playback at 8 FPS with gamma correction and sharpness filtering
 - **Physical blocker isolation model** — 4 blockers (Far North, Inner North, Inner South, Far South) define 3 safety zones: Zone A (north bay, Cam 1+3), Zone B (middle, Cam 2), Zone C (south entrance, Cam 4)
@@ -98,7 +100,7 @@ ai-hazard-recognition/
 ### 1 — Clone and prepare
 
 ```bash
-git clone https://github.com/jp2501/ai-hazard-recognition.git
+git clone https://github.com/jaypolra/ai-hazard-recognition.git
 cd ai-hazard-recognition
 ```
 
@@ -216,7 +218,7 @@ export VLLM_BASE_URL=http://localhost:8000/v1
 export GOOGLE_API_KEY=your_key_here
 ```
 
-See the companion repository [vlm-industrial-safety](https://github.com/jp2501/vlm-industrial-safety) for the full VLM research pipeline.
+See the companion repository [vlm-hazard-reasoning](https://github.com/jaypolra/vlm-hazard-reasoning) for the full VLM research pipeline.
 
 ---
 
